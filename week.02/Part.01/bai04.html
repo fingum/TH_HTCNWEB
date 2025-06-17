@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+    }
+
+    h1 {
+        background-color :#ccc;
+        padding : 8 px ;
+        margin: 10px auto;
+        text-align: center;
+        border: 4px solid;
+        border-radius: 15px;
+        width: auto;
+    }
+
+    form {
+        background-color:ghostwhite;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(165, 158, 158, 0.1);
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 250px;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .gioitinh {
+        margin-top: 1px;
+        margin-left: 1px;
+    }
+
+    .button-click {
+        background-color: brown;
+        color: white;
+        padding: 15px;
+        border: none ;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: auto ;
+        margin-top: 10px; 
+        margin-left: 10px;
+    }
+
+    .button-click:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+
+<body>
+    <form >
+    <h1>FORM ĐĂNG KÝ THÔNG TIN</h1>
+
+<label for="ten">HỌ TÊN : </label>
+<input type="text" name="name" id="ten"> <br> <br>
+
+<label for="email">EMAIL : </label>
+  <input type="email" name="email" id="email"> <br><br>
+
+  <label for="sdt">SĐT : </label>
+ <input type="number" name="sdt" id="sdt"> <br><br>
+
+ <div class="gioitinh">
+   <label >GIỚI TÍNH :</label>
+ <label >  <input type="radio" name="gioitinh" value="NAM">NAM</label> 
+    <label ><input type="radio" name="gioitinh" value="NỮ">NỮ</label>
+     
+
+     </div>
+     <br>
+     <input type="submit" class="button-click" name="button" value="GỬI">
+</form>
+</body>
+</html>
