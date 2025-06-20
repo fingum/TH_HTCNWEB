@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Cá Nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    
+      background-color: #f4f4f4;
+      margin: 0;
+       padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .info img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .info-text span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TRANG PORTFOLIO CÁ NHÂN</h1>
+
+  <div class="info">
+    <img src="https://png.pngtree.com/png-vector/20230803/ourmid/pngtree-flower-jpg-vector-png-image_6886193.png" alt="Ảnh đại diện">
+    <div class="info-text">
+      <span><strong>Họ và tên:</strong> Bùi Quang Thuận</span>
+      <span><strong>Năm sinh:</strong> 22/04/2006</span>
+      <span><strong>Mô tả:</strong> Sinh viên năm nhất IUH, thành thạo C++, HTML, CSS</span>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="project">
+      <h3>Dự Án 1: Trang Web Tin Tức</h3>
+      <p>Thiết kế giao diện web hiển thị tin tức bằng HTML/CSS. Responsive trên điện thoại.</p>
+    </div>
+    <div class="project">
+      <h3>Dự Án 2: Form Đăng Ký</h3>
+      <p>Tạo form nhập thông tin cá nhân với xác minh dữ liệu bằng HTML và CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Dự Án 3: Thư Viện Ảnh</h3>
+      <p>Hiển thị thư viện ảnh đẹp theo dạng lưới, có hiệu ứng hover nổi bật.</p>
+    </div>
+  </div>
+
+</body>
+</html>
