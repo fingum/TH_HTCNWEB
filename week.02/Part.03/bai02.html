@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Khảo Sát</title>
+  <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f4f8;
+      padding: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+       width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .infor h4,
+    .main h4,
+    .ykk h4 {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .infor input[type="text"],
+    .infor input[type="number"],
+    .ykk textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .infor,
+    .main,
+    .ykk {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .infor .gender {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .gender label {
+        margin-left: 5px;
+          margin-right: 15px;
+    }
+
+    .main input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .main label {
+      margin-right: 15px;
+    }
+
+    .main .source {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    textarea {
+       resize: vertical;
+      min-height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>FORM KHẢO SÁT Ý KIẾN</h1>
+
+    <div class="infor">
+      <h4>HỌ VÀ TÊN:</h4>
+      <input type="text" name="ten" placeholder="Nhập họ tên của bạn">
+
+      <h4>MÃ SINH VIÊN:</h4>
+      <input type="number" name="masinhvien" placeholder="Nhập mã sinh viên">
+
+      <h4>GIỚI TÍNH:</h4>
+      <div class="gender">
+        <input type="radio" id="nam" value="nam" name="gioitinh">
+        <label for="nam">Nam</label>
+
+        <input type="radio" id="nu" value="nu" name="gioitinh">
+        <label for="nu">Nữ</label>
+      </div>
+    </div>
+
+    <div class="main">
+      <h4>BẠN BIẾT CHÚNG TÔI QUA ĐÂU?</h4>
+      <div class="source">
+        <label><input type="checkbox" value="github"> GitHub</label>
+        <label><input type="checkbox" value="facebook"> Facebook</label>
+        <label><input type="checkbox" value="youtube"> YouTube</label>
+      </div>
+    </div>
+
+    <div class="ykk">
+      <h4>Ý KIẾN KHÁC:</h4>
+      <textarea name="ykienkhac" id="ykienkhac" placeholder="Ý kiến đóng góp của bạn..."></textarea>
+    </div>
+  </form>
+</body>
+</html>
