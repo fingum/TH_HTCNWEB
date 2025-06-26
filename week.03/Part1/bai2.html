@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "header header header"
+                                   "content1 content1 content1"
+                                "content2 content2 content2"
+                                "content3 content3 content3";
+                                grid-template-columns: 1fr 1fr 1fr;
+        }
+         .header{
+        grid-area:header ;
+    }
+    .content1{
+        grid-area: content1;
+    }
+    .content2{
+        grid-area: content2;
+    }
+    
+     .content3{
+        grid-area: content3;
+    }
+    
+     body{
+      
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .container{
+        border: 2px solid black;
+         border-radius:20px ;
+        background-color: antiquewhite;
+        padding: 40px 70px;
+        
+        
+     }
+     .header{
+        margin-bottom:30px ;
+       text-align: center;
+        font-size: 25px ;
+        border: 2px solid black;
+        background-color:aliceblue;
+        border-radius: 20px;
+        padding : 20px 40px
+        
+    }
+.content1{
+    border: 2px solid black;  
+    background-color: aqua;
+    border-radius: 15px;
+    padding:10px 15px;
+    width: 40%;
+   margin-bottom: 30px;
+   margin-right: 300px;
+    }
+
+.content2{
+      border: 2px solid black;  
+    background-color:blueviolet;
+    border-radius: 15px;
+    padding:10px 15px;
+    width: 40%;
+   margin-bottom: 30px;
+   margin-right: 300px;}
+ 
+   .content3{
+      border: 2px solid black;  
+    background-color:brown;
+    border-radius: 15px;
+    padding:10px 15px;
+    width: 40%;
+   margin-bottom: 30px;
+   margin-right: 300px;}
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+    <div class="header">MÔN HỌC YÊU THÍCH</div>
+    <div class="content1">CNTT</div>
+    <div class="content2">HTMLT</div>
+    <div class="content3">TCC</div>
+    </div>
+</body>
+</html>
