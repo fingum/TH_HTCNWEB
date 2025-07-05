@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      height: 100vh;
+      background-color: antiquewhite;
+    }
+
+    form {
+      margin: 20px;
+      padding: 35px;
+      border: 1px solid black;
+      border-radius: 15px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      width: 40%;
+      margin-top: 10px;
+    }
+
+    .gui {
+      width: 30%;
+      padding: 5px;
+    }
+
+    form h1 {
+      border: 1px solid black;
+      padding: 15px;
+      border-radius: 15px;
+      background-color: bisque;
+      text-align: center;
+    }
+
+    .gui:hover {
+      background-color: aqua;
+      transform: scale(1.05);
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ⭐ Style ngôi sao đánh giá */
+    .rating {
+      display: inline-flex;
+      direction: rtl;
+      font-size: 25px;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      color: lightgray;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .rating input:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>FORM GỬI PHẢN HỒI</h1>
+
+    TÊN : <input type="text" class="name"> <br><br>
+    EMAIL : <input type="email" class="email"> <br><br>
+
+    <label>ĐÁNH GIÁ :</label>
+<select name="rating">
+  <option value="1">★☆☆☆☆</option>
+  <option value="2">★★☆☆☆</option>
+  <option value="3">★★★☆☆</option>
+  <option value="4">★★★★☆</option>
+  <option value="5"> ★★★★★</option> 
+</select>
+
+    <br><br>
+    Ý KIẾN KHÁC : <textarea name="ykk"></textarea><br><br>
+    <input type="submit" value="GỬI" class="gui">
+  </form>
+</body>
+</html>
