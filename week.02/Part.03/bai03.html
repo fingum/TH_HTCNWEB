@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:30px;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            height: 100vh;
+            margin: 0;
+            background-color:antiquewhite;
+        }
+        form{
+            padding: 25px ;
+            border: 1px solid black ;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color:beige;
+        }
+       .nut_gui{
+        width:20%;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: azure;
+       
+       }
+       form h1{
+        margin-bottom:35px;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: center;
+        background-color:cadetblue;
+       }
+       form textarea{
+        width: 40%;
+        margin-top: 10px;
+        border-radius: 5px;
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <form >
+        <h1>FORM ĐẶT BÀN QUÁN ĂN</h1>
+        TÊN : <input type="text" class="name"> <br>
+        SỐ NGƯỜI : <input type="number" class="number"> <br>
+        YÊU CẦU : <textarea name="yeucau" class="yeu_cau"></textarea> <br>
+        <input type="submit" value="GỬI" class="nut_gui">
+    </form>
+</body>
+</html>
