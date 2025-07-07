@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            height: 100vh;
+            background-color: antiquewhite;
+
+        }
+        form{
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 15px;
+            display: flex;
+
+            flex-direction: column;
+          font-family:Arial, Helvetica, sans-serif;
+          background-color: bisque;
+        }
+        .infor{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 60%;
+        }
+       .button{
+        width:30%;
+        margin-top: 15px;
+        margin-left: 5px;
+       }
+      form h1{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 15px;
+        background-color:azure;
+      
+       }
+    </style>
+</head>
+<body>
+    <form >
+        <h1>FORM THANH TOÁN ĐƠN HÀNG</h1>
+       <div class="infor">
+        HỌ VÀ TÊN : <input type="text" name="user_name" > <br>
+        ĐỊA CHỈ :<input type="text" name="address"> <br>
+    
+
+       </div>
+       <div class="payment">
+        
+        PHƯƠNG THỨC THANH TOÁN  : <select name="pttt" >
+         <option value="none"></option>
+         <option value="cod">COD</option>
+         <option value="bank">BANKING</option>
+         <option value="momo">MOMO PAYMENT</option>
+         <option value="paypal">PAYPAL</option>
+         <option value="crypto">CRYPTO</option>
+        </select> 
+       </div> <br>
+
+    <input type="submit" value="GỬI " name="button_click" class="button">
+    </form>
+</body>
+</html>
