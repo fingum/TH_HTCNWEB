@@ -1,0 +1,45 @@
+<!-- Chèn vào trang bất kỳ -->
+<style>
+  .survey-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  .options {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+</style>
+
+<form class="survey-form">
+  <h3>Bạn thích phần nào nhất?</h3>
+  <div class="options">
+    <label><input type="radio" name="favorite" value="ui"> Giao diện</label>
+    <label><input type="radio" name="favorite" value="speed"> Tốc độ</label>
+    <label><input type="radio" name="favorite" value="support"> Hỗ trợ</label>
+  </div>
+
+  <h3>Bạn sử dụng tính năng nào?</h3>
+  <div class="options">
+    <label><input type="checkbox" name="feature" value="chat"> Chat</label>
+    <label><input type="checkbox" name="feature" value="docs"> Tài liệu</label>
+    <label><input type="checkbox" name="feature" value="api"> API</label>
+  </div>
+
+  <textarea rows="4" placeholder="Ý kiến khác..."></textarea>
+</form>

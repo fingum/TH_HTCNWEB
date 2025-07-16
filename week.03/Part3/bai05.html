@@ -1,0 +1,47 @@
+<style>
+  .checkout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .checkout-form section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  @media (max-width: 700px) {
+    .checkout-form {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<form class="checkout-form">
+  <section>
+    <h3>Thông tin người nhận</h3>
+    <input type="text" placeholder="Họ tên">
+    <input type="text" placeholder="Địa chỉ">
+    <input type="tel" placeholder="Số điện thoại">
+  </section>
+
+  <section>
+    <h3>Thanh toán</h3>
+    <input type="text" placeholder="Số thẻ">
+    <input type="text" placeholder="Tên chủ thẻ">
+    <input type="text" placeholder="Ngày hết hạn (MM/YY)">
+  </section>
+</form>

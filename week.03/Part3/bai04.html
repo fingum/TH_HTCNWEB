@@ -1,0 +1,52 @@
+<style>
+  .feedback-form {
+    display: grid;
+    gap: 16px;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  .star-rating {
+    display: flex;
+    gap: 8px;
+  }
+
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+
+  .star-rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: gold;
+  }
+</style>
+
+<form class="feedback-form">
+  <input type="text" placeholder="Tên của bạn">
+  <input type="email" placeholder="Email">
+  <textarea rows="4" placeholder="Viết phản hồi..."></textarea>
+
+  <div>
+    <p>Đánh giá:</p>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+  </div>
+</form>
