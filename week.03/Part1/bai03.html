@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thời Khoá Biểu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .timetable {
+      display: grid;
+      grid-template-columns: 120px repeat(5, 1fr);
+      gap: 1px;
+      background: #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .row {
+      display: contents;
+    }
+
+    .cell {
+      padding: 12px;
+      background: white;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .header {
+      background: #007BFF;
+      color: white;
+      font-weight: bold;
+    }
+
+    .time {
+      background: #eee;
+      font-weight: bold;
+    }
+
+    .cell:hover:not(.header):not(.time) {
+      background: #dff0ff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thời Khoá Biểu - Lớp 12A1</h1>
+
+  <div class="timetable">
+
+    <!-- Header hàng đầu -->
+    <div class="row">
+      <div class="cell header">Tiết / Thứ</div>
+      <div class="cell header">Thứ 2</div>
+      <div class="cell header">Thứ 3</div>
+      <div class="cell header">Thứ 4</div>
+      <div class="cell header">Thứ 5</div>
+      <div class="cell header">Thứ 6</div>
+    </div>
+
+    <!-- Các hàng tiết học -->
+    <div class="row">
+      <div class="cell time">Tiết 1</div>
+      <div class="cell">Toán</div>
+      <div class="cell">Lý</div>
+      <div class="cell">Hoá</div>
+      <div class="cell">Văn</div>
+      <div class="cell">Anh</div>
+    </div>
+
+    <div class="row">
+      <div class="cell time">Tiết 2</div>
+      <div class="cell">Toán</div>
+      <div class="cell">Lý</div>
+      <div class="cell">Hoá</div>
+      <div class="cell">Văn</div>
+      <div class="cell">Anh</div>
+    </div>
+
+    <div class="row">
+      <div class="cell time">Tiết 3</div>
+      <div class="cell">Sinh</div>
+      <div class="cell">Sử</div>
+      <div class="cell">Địa</div>
+      <div class="cell">GDCD</div>
+      <div class="cell">Công nghệ</div>
+    </div>
+
+    <div class="row">
+      <div class="cell time">Tiết 4</div>
+      <div class="cell">Thể dục</div>
+      <div class="cell">Tin học</div>
+      <div class="cell">Toán</div>
+      <div class="cell">Lý</div>
+      <div class="cell">Hoá</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
