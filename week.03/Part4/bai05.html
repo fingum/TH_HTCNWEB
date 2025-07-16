@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Cá Nhân - Nguyễn Văn A</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left {
+      width: 35%;
+      background: #007BFF;
+      color: white;
+      padding: 30px;
+    }
+
+    .right {
+      width: 65%;
+      background: #f0f0f0;
+      padding: 30px;
+    }
+
+    h1, h2 {
+      margin: 0 0 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .left h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .left p {
+      margin: 4px 0;
+    }
+
+    .skill-bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .skill-bar-fill {
+      display: block;
+      height: 10px;
+      background: #007BFF;
+    }
+
+    .section-title {
+      color: #007BFF;
+      margin-bottom: 10px;
+      font-size: 20px;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Cột trái: Thông tin cá nhân -->
+  <div class="left">
+    <h1>Bùi Quang THuận</h1>
+    <p><strong>Web Developer</strong></p>
+    <p>📞 0909 123 456</p>
+    <p>📧 nguyena@gmail.com</p>
+    <p>📍 TP. Hồ Chí Minh</p>
+
+    <div class="section">
+      <h2>Kỹ năng</h2>
+      <p>HTML / CSS</p>
+      <div class="skill-bar"><span class="skill-bar-fill" style="width: 90%;"></span></div>
+      <p>JavaScript</p>
+      <div class="skill-bar"><span class="skill-bar-fill" style="width: 80%;"></span></div>
+      <p>React</p>
+      <div class="skill-bar"><span class="skill-bar-fill" style="width: 75%;"></span></div>
+    </div>
+  </div>
+
+  <!-- Cột phải: Học vấn và khác -->
+  <div class="right">
+    <div class="section">
+      <div class="section-title">Học vấn</div>
+      <p><strong>Đại học Công nghệ Thông tin - ĐHQG TP.HCM</strong></p>
+      <p>Cử nhân Công nghệ Thông tin (2018 - 2022)</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Kinh nghiệm</div>
+      <p><strong>Công ty ABC (2022 - nay)</strong></p>
+      <p>Phát triển giao diện web cho hệ thống nội bộ và sản phẩm thương mại điện tử.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Dự án tiêu biểu</div>
+      <ul>
+        <li>Website bán sách online (React + Firebase)</li>
+        <li>Trang blog cá nhân (HTML/CSS/JS)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

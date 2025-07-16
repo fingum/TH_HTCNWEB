@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0 ;
+      padding: 25px;
+      background-color: aliceblue;
+    }
+    form{
+      padding: 15px 25px;
+      border: 2px solid grey;
+      border-radius: 15px;
+      box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+    }
+    .product1 img , .product2 img,.product3 img{
+ 
+  border-radius: 10px; /* Bo tròn nhẹ cho đẹp */
+
+  height: 100px;   /* Giới hạn chiều cao tối đa (có thể chỉnh tùy ý) */
+}
+h1{
+   border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.product1, .product2, .product3 {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  height: 200px;
+}
+.shop{
+  display: grid;
+  gap: 15px;
+  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-rows:100px 300px ;
+grid-template-areas: "header header header"
+                     "product1 product2 product3"; }
+
+      h1{
+        grid-area: header;
+      }
+      .product1{
+        grid-area: product1;
+      }
+      .product2{
+        grid-area: product2;
+
+      }
+.product3{
+  grid-area: product3;
+}
+.button{
+  background-color: green;
+  margin-top: 15px; 
+  margin-left: 16px;
+}
+.button:hover{
+  transform: scale(1.05);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  background-color: red;
+}
+  </style>
+</head>
+<body>
+  <form >
+  
+    <div class="shop">
+        <h1>TRANG BÁN HÀNG ĐIỆN THOẠI</h1>
+     <div class="product1">
+    <div>IPHONE 16 PRO MAX</div>
+    <div>GIÁ : 15.000.000 VNĐ</div>
+    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg" >
+    <div><input type="submit" class="button" value="MUA NGAY"></div>
+     </div>
+      <div class="product2">
+    <div>IPHONE 15 PRO MAX</div>
+    <div>GIÁ : 10.000.000 VNĐ</div>
+    <img src="https://onewaymobile.vn/images/products/2024/12/02/original/1_1733114406_1.png" >
+    <div><input type="submit" class="button" value="MUA NGAY"></div>
+     </div>
+        <div class="product3">
+    <div>IPHONE 14 PRO MAX</div>
+    <div>GIÁ : 13.000.000 VNĐ</div>
+    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/_/v_ng_20_2_1_2_1.png" >
+    <div><input type="submit" class="button" value="MUA NGAY"></div>
+     </div>
+    </div>
+  </form>
+</body>
+</html>
