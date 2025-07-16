@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư viện ảnh Grid</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Tablet: 2 cột */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile: 1 cột */
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Thư viện ảnh</h1>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+1" alt="Ảnh 1">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+2" alt="Ảnh 2">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+3" alt="Ảnh 3">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+4" alt="Ảnh 4">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+5" alt="Ảnh 5">
+    <img src="https://via.placeholder.com/400x300?text=Ảnh+6" alt="Ảnh 6">
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ảnh và Mô tả Flexbox</title>
+  <style>
+    .image-text-container {
+      display: flex;
+      flex-direction: row; /* Đổi thành row-reverse nếu muốn ảnh bên phải */
+      align-items: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .image {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .description {
+      flex: 1;
+    }
+
+    .description h2 {
+      margin: 0 0 10px;
+    }
+
+    .description p {
+      margin: 0;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .image-text-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-text-container">
+    <img src="https://via.placeholder.com/200" alt="Ảnh minh họa" class="image" />
+    <div class="description">
+      <h2>Tiêu đề mô tả</h2>
+      <p>Đây là đoạn mô tả chi tiết về nội dung của bức ảnh, được căn chỉnh bằng Flexbox. Layout này có thể đảo chiều rất linh hoạt bằng CSS.</p>
+    </div>
+  </div>
+
+</body>
+</html>

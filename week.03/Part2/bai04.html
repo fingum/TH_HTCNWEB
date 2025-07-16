@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Player với Mô tả</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .audio-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 16px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .audio-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="audio-card">
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ audio HTML5.
+    </audio>
+    <div class="audio-description">
+      Đây là một đoạn nhạc mẫu được chèn bằng thẻ HTML5 `<audio>`. Bố cục được chia làm hai hàng bằng CSS Grid, đảm bảo gọn gàng, dễ nhìn và tương thích tốt với mọi kích thước màn hình.
+    </div>
+  </div>
+
+</body>
+</html>
