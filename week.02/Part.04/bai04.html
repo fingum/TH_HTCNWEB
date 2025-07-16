@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch Sự Kiện</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .event {
+      background-color: #fff;
+      border-left: 6px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .event:hover {
+      transform: translateX(5px);
+    }
+
+    .event.today {
+      border-color: #ff5722;
+      background-color: #fff3e0;
+    }
+
+    .event[data-day="Monday"] { border-color: #4caf50; }
+    .event[data-day="Tuesday"] { border-color: #2196f3; }
+    .event[data-day="Wednesday"] { border-color: #9c27b0; }
+    .event[data-day="Thursday"] { border-color: #ff9800; }
+    .event[data-day="Friday"] { border-color: #3f51b5; }
+    .event[data-day="Saturday"] { border-color: #009688; }
+    .event[data-day="Sunday"] { border-color: #e91e63; }
+
+    .event h2 {
+      margin: 0 0 5px;
+      font-size: 20px;
+    }
+
+    .event .date {
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lịch Sự Kiện Tuần Này</h1>
+
+  <div class="event today" data-day="Wednesday">
+    <h2>Hội thảo công nghệ AI</h2>
+    <div class="date">Thứ Tư, 17/07/2025</div>
+    <p>Buổi hội thảo chia sẻ kiến thức mới nhất về trí tuệ nhân tạo.</p>
+  </div>
+
+  <div class="event" data-day="Friday">
+    <h2>Ngày hội việc làm</h2>
+    <div class="date">Thứ Sáu, 19/07/2025</div>
+    <p>Hơn 50 doanh nghiệp tuyển dụng trực tiếp tại sự kiện.</p>
+  </div>
+
+  <div class="event" data-day="Sunday">
+    <h2>Chạy bộ gây quỹ</h2>
+    <div class="date">Chủ Nhật, 21/07/2025</div>
+    <p>Sự kiện chạy bộ từ thiện vì cộng đồng tại công viên Gia Định.</p>
+  </div>
+
+</body>
+</html>
