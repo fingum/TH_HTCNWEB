@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-btn {
+      padding: 12px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .form-group {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Form Đăng Ký Thông Tin</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ho">Họ</label>
+          <input type="text" id="ho" name="ho" required>
+        </div>
+        <div class="form-group">
+          <label for="ten">Tên</label>
+          <input type="text" id="ten" name="ten" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="sdt">Số điện thoại</label>
+          <input type="tel" id="sdt" name="sdt" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="ngaysinh">Ngày sinh</label>
+        <input type="date" id="ngaysinh" name="ngaysinh">
+      </div>
+
+      <div class="form-group">
+        <label for="ghichu">Ghi chú thêm</label>
+        <textarea id="ghichu" name="ghichu" placeholder="Nhập nội dung..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Gửi đăng ký</button>
+    </form>
+  </div>
+
+</body>
+</html>
