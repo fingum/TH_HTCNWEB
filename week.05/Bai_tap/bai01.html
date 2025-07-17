@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xin chào</title>
+</head>
+<body>
+  <input type="text" id="nameInput" placeholder="Nhập họ tên">
+  <button onclick="sayHello()">Gửi</button>
+
+  <script>
+    function sayHello() {
+      const fullName = document.getElementById("nameInput").value.trim();
+      
+      if (fullName === "") {
+        console.log("Vui lòng nhập tên.");
+        return;
+      }
+
+      const nameParts = fullName.split(" ");
+      const lastName = nameParts[nameParts.length - 1];
+      console.log("Hello " + lastName);
+    }
+  </script>
+</body>
+</html>
